@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images and responsive in html</title>
+</head>
+<body>
+    <!--<img src="https://images.unsplash.com/photo-1601689266752-211fe93008d3?ixlib=rb-4.0.3&dl=courtney-smith-S_OM6yC-hKI-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb.jpg" alt="house"
+    srcset="/assest/small.jpg 480w,
+            /assest/medium.jpg 800w,
+            /assest/large.jpg 1200w"
+    sizes="(max-width: 480px) 240px,
+            (max-width: 960px) 480px,
+            (max-width: 1440px) 960px"
+            >-->
+    <picture> 
+    <source media="(max-width: 600px)" srcset="https://www.w3schools.com/html/pic_trull.jpg">
+    <source media="(max-width: 900px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+    <img src="https://www.w3schools.com/html/img_food.jpg" alt="">
+    </picture>
+
+    <!--Image mapping----->
+
+    <img src ="https://www.w3schools.com/html/workplace.jpg" alt="worlspace" usemaps="workspace ">
+
+     <map name="woekspace">
+        <area shape="rect" coords="34,44,270,350" alt="computer" href="computer.html">
+        <area shape="rect" coords="290,172,333,250"  href="phone.html" alt="phone">
+        <area shape="circle" coords="337,309,44" href="cup.html" alt="cup">
+    </map>
+</body>
+</html>
